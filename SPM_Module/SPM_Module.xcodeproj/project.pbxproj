@@ -11,6 +11,7 @@
 		3B0267E729A042DC00A93772 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0267E629A042DC00A93772 /* ContentView.swift */; };
 		3B0267E929A042DE00A93772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0267E829A042DE00A93772 /* Assets.xcassets */; };
 		3B0267EC29A042DE00A93772 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */; };
+		3B0267F329A047F200A93772 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B0267E629A042DC00A93772 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B0267E829A042DE00A93772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				3B0267E629A042DC00A93772 /* ContentView.swift */,
 				3B0267E829A042DE00A93772 /* Assets.xcassets */,
 				3B0267EA29A042DE00A93772 /* Preview Content */,
+				3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */,
 			);
 			path = SPM_Module;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0267F329A047F200A93772 /* AuthenticationViewModel.swift in Sources */,
 				3B0267E729A042DC00A93772 /* ContentView.swift in Sources */,
 				3B0267E529A042DC00A93772 /* SPM_ModuleApp.swift in Sources */,
 			);
