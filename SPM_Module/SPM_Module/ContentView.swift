@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
+    
     @State var email: String = ""
     @State var password: String = ""
     
@@ -35,7 +37,7 @@ struct ContentView: View {
             }
             
             Button("Login") {
-                print("Login...")
+                authenticationViewModel.login(email: email, password: password)
             }
             .buttonStyle(.bordered)
             .tint(.black)
@@ -43,6 +45,11 @@ struct ContentView: View {
         }
         .padding(.leading, 10)
         .padding(.trailing, 10)
+        .alert(authenticationViewModel.loginStatus == .success ? "Login Success":"Login Error",  isPresented: $authenticationViewModel.didUpdateLoginStatus) {
+            Button("Aceptar") {
+                print("Dismiss Alert")
+            }
+        }
     }
 }
 

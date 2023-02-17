@@ -17,7 +17,7 @@ final class AuthenticationViewModel: ObservableObject {
     @Published var didUpdateLoginStatus: Bool = false
     
     func login(email: String, password: String) {
-        if email.lowercased() == "Prueba" {
+        if email.lowercased() == "prueba" {
             loginStatus = .success
         }else {
             loginStatus = .error
