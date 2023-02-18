@@ -11,7 +11,7 @@
 		3B0267E729A042DC00A93772 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0267E629A042DC00A93772 /* ContentView.swift */; };
 		3B0267E929A042DE00A93772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0267E829A042DE00A93772 /* Assets.xcassets */; };
 		3B0267EC29A042DE00A93772 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */; };
-		3B0267F329A047F200A93772 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */; };
+		3B0267F729A0500900A93772 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0267F629A0500900A93772 /* LoginModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		3B0267E629A042DC00A93772 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B0267E829A042DE00A93772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		3B0267F429A04C5600A93772 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = ../../LoginModule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -29,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0267F729A0500900A93772 /* LoginModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +40,7 @@
 			children = (
 				3B0267E329A042DC00A93772 /* SPM_Module */,
 				3B0267E229A042DC00A93772 /* Products */,
+				3B0267F529A0500900A93772 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +60,6 @@
 				3B0267E629A042DC00A93772 /* ContentView.swift */,
 				3B0267E829A042DE00A93772 /* Assets.xcassets */,
 				3B0267EA29A042DE00A93772 /* Preview Content */,
-				3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */,
 			);
 			path = SPM_Module;
 			sourceTree = "<group>";
@@ -70,6 +70,13 @@
 				3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B0267F529A0500900A93772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +95,9 @@
 			dependencies = (
 			);
 			name = SPM_Module;
+			packageProductDependencies = (
+				3B0267F629A0500900A93772 /* LoginModule */,
+			);
 			productName = SPM_Module;
 			productReference = 3B0267E129A042DC00A93772 /* SPM_Module.app */;
 			productType = "com.apple.product-type.application";
@@ -142,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0267F329A047F200A93772 /* AuthenticationViewModel.swift in Sources */,
 				3B0267E729A042DC00A93772 /* ContentView.swift in Sources */,
 				3B0267E529A042DC00A93772 /* SPM_ModuleApp.swift in Sources */,
 			);
@@ -343,6 +352,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B0267F629A0500900A93772 /* LoginModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoginModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B0267D929A042DC00A93772 /* Project object */;
 }

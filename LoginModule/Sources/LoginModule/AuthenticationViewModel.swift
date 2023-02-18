@@ -7,16 +7,20 @@
 
 import Foundation
 
-enum LoginStatus {
+public enum LoginStatus {
     case success
     case error
 }
 
-final class AuthenticationViewModel: ObservableObject {
-    @Published var loginStatus: LoginStatus = .success
-    @Published var didUpdateLoginStatus: Bool = false
+final public class AuthenticationViewModel: ObservableObject {
+    @Published public var loginStatus: LoginStatus = .success
+    @Published public var didUpdateLoginStatus: Bool = false
     
-    func login(email: String, password: String) {
+    public init() {
+        
+    }
+    
+    public func login(email: String, password: String) {
         if email.lowercased() == "prueba" {
             loginStatus = .success
         }else {
