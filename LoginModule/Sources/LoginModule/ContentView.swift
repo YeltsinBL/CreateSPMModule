@@ -18,7 +18,7 @@ public struct ContentView: View {
     
     public var body: some View {
         VStack {
-            Image("descarga")
+            Image("descarga", bundle: .module)
                 .resizable()
                 .frame(width: 200, height: 200)
             Group {
