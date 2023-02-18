@@ -21,6 +21,7 @@
 		3B0267E829A042DE00A93772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0267EB29A042DE00A93772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B0267F229A047F200A93772 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		3B0267F429A04C5600A93772 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = ../../LoginModule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		3B0267E329A042DC00A93772 /* SPM_Module */ = {
 			isa = PBXGroup;
 			children = (
+				3B0267F429A04C5600A93772 /* LoginModule */,
 				3B0267E429A042DC00A93772 /* SPM_ModuleApp.swift */,
 				3B0267E629A042DC00A93772 /* ContentView.swift */,
 				3B0267E829A042DE00A93772 /* Assets.xcassets */,
