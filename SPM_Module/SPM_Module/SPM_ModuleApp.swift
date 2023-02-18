@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LoginModule
 
 @main
 struct SPM_ModuleApp: App {

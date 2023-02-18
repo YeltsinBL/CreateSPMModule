@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
-import LoginModule
 
-struct ContentView: View {
+public struct ContentView: View {
     
     @StateObject var authenticationViewModel = AuthenticationViewModel()
     
     @State var email: String = ""
     @State var password: String = ""
     
-    var body: some View {
+    public init() { } //para que se pueda instanciar desde la aplicacion principal
+    
+    public var body: some View {
         VStack {
             Image("descarga")
                 .resizable()
